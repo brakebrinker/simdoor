@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"count",
+				"countItems"
+			],
+			[
+				"coun",
+				"countItems"
+			],
+			[
+				"col",
+				"colItems"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"font",
+				"font-awesome.css\t(header.php)"
+			],
+			[
 				"ha",
 				"hasClass"
 			],
@@ -140,12 +160,104 @@
 	"buffers":
 	[
 		{
-			"file": "sftp-config.json",
+			"file": "plugins/woocommerce/includes/wc-template-functions.php",
 			"settings":
 			{
-				"buffer_size": 1377,
+				"buffer_size": 77999,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "plugins/woocommerce/templates/loop/sale-flash.php",
+			"settings":
+			{
+				"buffer_size": 1055,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "plugins/woocommerce/templates/content-product.php",
+			"settings":
+			{
+				"buffer_size": 1945,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "plugins/woocommerce/templates/loop/add-to-cart.php",
+			"settings":
+			{
+				"buffer_size": 1295,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "plugins/woocommerce/templates/single-product/related.php",
+			"settings":
+			{
+				"buffer_size": 1317,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "plugins/woocommerce/templates/loop/loop-end.php",
+			"settings":
+			{
+				"buffer_size": 657,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "plugins/woocommerce/templates/loop/loop-start.php",
+			"settings":
+			{
+				"buffer_size": 686,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "plugins/woocommerce/templates/single-product/meta.php",
+			"settings":
+			{
+				"buffer_size": 1587,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/sublime-sftp-browse-1504515125/mapped/www/test.ifelse.by/wp-content/plugins/woocommerce/templates/content-single-product.php",
+			"settings":
+			{
+				"buffer_size": 3375,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/simdors/assets/css/style.css",
+			"settings":
+			{
+				"buffer_size": 16066,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php\tinclude \"header.php\";?>\t\t\n\t<main>\t\t\n\t\t<div class=\"container good\">\n\t\t\t<div class=\"page-head\">\n\t\t\t\t<h2>дверь металлическая триумф-2</h2>\n\t\t\t\t<div class=\"breadcrumbs\">\n\t\t\t\t\t<a href=\"index.php\">Главная</a>\n\t\t\t\t\t/\n\t\t\t\t\t<a href=\"index.php\">Двери для частных лиц</a>\n\t\t\t\t\t/\n\t\t\t\t\t<span>Дверь металлическая Триумф-2</span>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-4 col-sm-4\">\n\t\t\t\t\t<img src=\"img/good3.jpg\" alt=\"\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-4 col-sm-4\">\n\t\t\t\t\t<h5>Внешняя и Внутренняя отделка :</h5>\n\t\t\t\t\t<span>Pаскрытая конструкция из цельногнутого стального профиля 1,5 мм, полотно усилено вертикальными и горизонтальными ребрами жесткости.</span>\n\t\t\t\t\t<h5>Покрытие двери:</h5>\n\t\t\t\t\t<span>Порошково-полимерное , цвет «Медный антик».</span>\n\t\t\t\t\t<h5>Толщина полотна :</h5>\n\t\t\t\t\t<span>63 мм.</span> \n\t\t\t\t\t<h5>Толщина дверного короба:</h5>\n\t\t\t\t\t<span>86-88 мм.</span>\n\t\t\t\t\t<h5>Наполнение:</h5>\n\t\t\t\t\t<span>Экологически чистая минеральная плита, обладающая высокой  шумо – и теплоизоляцией толщиной 60мм.</span>\n\t\t\t\t\t<h5>Петли:</h5>\n\t\t\t\t\t<span>На шариковых подшипниках140 мм в кол-ве 3 шт.</span>\n\t\t\t\t\t<h5>Ручка:</h5>\n\t\t\t\t\t<span>FUARO Long-хром.</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-4 col-sm-4\">\n\t\t\t\t\t<h5>Замок:</h5>\n\t\t\t\t\t<span>Врезной цилиндровый с защелкой ,4 класса защиты – «Гардиан 32.11», а так же сувальдный сейфового типа , 2 класса защиты – «Гардиан 30.01»</span>\n\t\t\t\t\t<h5>Глазок:</h5>\n\t\t\t\t\t<span>Обзор 180 градусов.</span>\n\t\t\t\t\t<h5>Порог:</h5>\n\t\t\t\t\t<span>45 мм.</span>\n\t\t\t\t\t<h5>Дополнительная защита:</h5>\n\t\t\t\t\t<span>противосъёмные штыри.<br/>Так же данная модель комплектуется декоративными заглушками и эксцентриком- для легкой регулировки дверного полотна.</span>\n\t\t\t\t\t<h5>Дополнительно (на выбор):</h5>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>цвет фурнитуры:</li>\n\t\t\t\t\t\t<li>«хром»/«золото»/«бронза»</li>\n\t\t\t\t\t\t<li>замок</li>\n\t\t\t\t\t\t<li>модель ручки, глазка</li>\n\t\t\t\t\t\t<li>тип накладок</li>\n\t\t\t\t\t\t<li>цвет порошково-полимерного покрытия.</li>\n\t\t\t\t\t\t<li>хромированная накладка на порог</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-3 col-md-offset-4 col-sm-4 col-sm-offset-4\">\n\t\t\t\t\t<a href=\"#\" class=\"button small buy\">В корзину</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"container good-wrapper\">\n\t\t\t<h2 style=\"text-align: left;\">Возможно вас также заинтересует:</h2>\n\t\t\t<div class=\"row\">\t\t\t\t\n\t\t\t\t<div class=\"col-md-3 col-sm-6\">\t\t\t\t\t\n\t\t\t\t\t<div class=\"good-loop\">\n\t\t\t\t\t\t<img src=\"img/good1.jpg\" alt=\"\">\n\t\t\t\t\t\t<h5>дверь входная</h5>\n\t\t\t\t\t\t<span>\"Техническая\"</span>\n\t\t\t\t\t\t<div class=\"tool\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"button small\">Подробнее</a>\n\t\t\t\t\t\t\t<a href=\"#\" class=\"buy\"></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-3 col-sm-6\">\t\t\t\t\t\n\t\t\t\t\t<div class=\"good-loop\">\n\t\t\t\t\t\t<img src=\"img/good2.jpg\" alt=\"\">\n\t\t\t\t\t\t<h5>входная дверь</h5>\n\t\t\t\t\t\t<span>\"Поло\"</span>\n\t\t\t\t\t\t<div class=\"tool\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"button small\">Подробнее</a>\n\t\t\t\t\t\t\t<a href=\"#\" class=\"buy\"></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-3 col-sm-6\">\t\t\t\t\t\n\t\t\t\t\t<div class=\"good-loop\">\n\t\t\t\t\t\t<img src=\"img/good3.jpg\" alt=\"\">\n\t\t\t\t\t\t<h5>Дверь противопожарная</h5>\n\t\t\t\t\t\t<span>“ДМП-01/60”</span>\n\t\t\t\t\t\t<div class=\"tool\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"button small\">Подробнее</a>\n\t\t\t\t\t\t\t<a href=\"#\" class=\"buy\"></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-3 col-sm-6\">\t\t\t\t\t\n\t\t\t\t\t<div class=\"good-loop\">\n\t\t\t\t\t\t<img src=\"img/good4.jpg\" alt=\"\">\n\t\t\t\t\t\t<h5>Дверь противопожарная</h5>\n\t\t\t\t\t\t<span>“ДМП-02/60”</span>\n\t\t\t\t\t\t<div class=\"tool\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"button small\">Подробнее</a>\n\t\t\t\t\t\t\t<a href=\"#\" class=\"buy\"></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</main>\n<?php\tinclude \"footer.php\";?>\t",
+			"file": "layout/good.php",
+			"file_size": 4838,
+			"file_write_time": 131481162340000000,
+			"settings":
+			{
+				"buffer_size": 3705,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -203,10 +315,64 @@
 	"expanded_folders":
 	[
 		"/media/job/projects/simdors",
-		"/media/job/projects/simdors/simdors"
+		"/media/job/projects/simdors/layout",
+		"/media/job/projects/simdors/plugins",
+		"/media/job/projects/simdors/plugins/woocommerce",
+		"/media/job/projects/simdors/plugins/woocommerce/assets",
+		"/media/job/projects/simdors/plugins/woocommerce/templates",
+		"/media/job/projects/simdors/plugins/woocommerce/templates/loop",
+		"/media/job/projects/simdors/plugins/woocommerce/templates/single-product",
+		"/media/job/projects/simdors/plugins/woocommerce/templates/single-product/tabs",
+		"/media/job/projects/simdors/themes",
+		"/media/job/projects/simdors/themes/simdors",
+		"/media/job/projects/simdors/themes/simdors/assets",
+		"/media/job/projects/simdors/themes/simdors/assets/css"
 	],
 	"file_history":
 	[
+		"/media/job/projects/simdors/plugins/woocommerce/templates/loop/loop-start.php",
+		"/media/job/projects/simdors/plugins/woocommerce/templates/loop/loop-end.php",
+		"/media/job/projects/simdors/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php",
+		"/media/job/projects/simdors/plugins/woocommerce/includes/class-wc-product-variation.php",
+		"/media/job/projects/simdors/plugins/woocommerce/includes/class-wc-product-simple.php",
+		"/media/job/projects/simdors/plugins/woocommerce/includes/admin/views/html-admin-page-addons.php",
+		"/media/job/projects/simdors/plugins/woocommerce/templates/single-product/tabs/tabs.php",
+		"/tmp/sublime-sftp-browse-1504514609/mapped/www/test.ifelse.by/wp-content/plugins/woocommerce/templates/single-product/title.php",
+		"/media/job/projects/simdors/sftp-config.json",
+		"/media/job/projects/simdors/layout/footer.php",
+		"/media/job/projects/simdors/plugins/woocommerce/includes/wc-template-hooks.php",
+		"/media/job/projects/simdors/plugins/woocommerce/includes/wc-template-functions.php",
+		"/media/job/projects/simdors/plugins/woocommerce/templates/single-product/tabs/description.php",
+		"/media/job/projects/simdors/plugins/woocommerce/templates/single-product/tabs/additional-information.php",
+		"/media/job/projects/simdors/plugins/woocommerce/templates/single-product/product-attributes.php",
+		"/media/job/projects/simdors/plugins/woocommerce/templates/single-product/title.php",
+		"/media/job/projects/simdors/simdors/assets/css/style.css",
+		"/media/job/projects/simdors/simdors/inc/class-storefront.php",
+		"/media/job/projects/simdors/simdors/template-about.php",
+		"/media/job/projects/simdors/simdors/inc/storefront-template-functions.php",
+		"/media/job/projects/simdors/simdors/footer.php",
+		"/media/job/projects/simdors/simdors/header.php",
+		"/media/job/projects/simdors/simdors/template-homepage.php",
+		"/media/job/projects/simdors/simdors/inc/woocommerce/storefront-woocommerce-template-hooks.php",
+		"/media/job/projects/simdors/simdors/inc/storefront-template-hooks.php",
+		"/tmp/sublime-sftp-browse-1504516067/mapped/www/test.ifelse.by/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php",
+		"/tmp/sublime-sftp-browse-1504514827/mapped/www/test.ifelse.by/wp-content/plugins/woocommerce/templates/content-product.php",
+		"/media/job/projects/simdors/simdors/inc/woocommerce/storefront-woocommerce-template-functions.php",
+		"/media/job/projects/fsconsult/wp/fsconsult/wp-content/themes/fsconsult/page-kontakty.php",
+		"/media/job/projects/simdors/layout/css/style.css",
+		"/media/job/projects/u4g_origin/mail.php",
+		"/media/job/projects/simdors/.gitignore",
+		"/media/job/projects/u4g_origin/404.php",
+		"/media/job/projects/u4g_origin/front-page.php",
+		"/media/job/projects/u4g_origin/header.php",
+		"/media/job/projects/u4g_origin/footer.php",
+		"/media/job/projects/u4g_origin/also-recomendet.php",
+		"/media/job/projects/u4g-gulp/app/404.php",
+		"/media/job/projects/u4g_origin/cmsbuild.php",
+		"/media/job/projects/u4g_origin/cache.php",
+		"/media/job/projects/u4g_origin/footer_1251.php",
+		"/media/job/projects/u4g_origin/yt.php.suspected",
+		"/media/job/projects/u4g_origin/figure.php",
 		"/media/job/projects/dekor/assets/js/catalog.js",
 		"/media/job/projects/dekor/assets/elements/chunks/sidebar.tpl",
 		"/media/job/projects/dekor/assets/elements/templates/production.tpl",
@@ -287,9 +453,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 136.0,
+		"height": 139.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -297,6 +464,71 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<li",
+			"class=\"woocommerce-LoopProduct-link",
+			"product",
+			"<li class=\"",
+			"url",
+			"ur;",
+			"add_to_cart_url",
+			"class=\"onsale\"",
+			"wc_get_template_part",
+			"woocommerce_product_loop_start",
+			"ВОЗМОЖНО ВАС ТАКЖЕ ЗАИНТЕРЕСУЕТ",
+			"woocommerce_template_loop_product_title",
+			"class=\"woocommerce-loop-product__title\"",
+			"class=\"products\"",
+			"class=\"woocommerce-loop-product__title\"",
+			"class=\"related products\"",
+			"class=\"woocommerce-loop-product__title\"",
+			"class=\"related products\"",
+			"class=\"posted_in\"",
+			"woocommerce_template_single_excerpt",
+			"woocommerce_template_single_add_to_cart",
+			"woocommerce_template_single_price",
+			"woocommerce_template_single_add_to_cart",
+			"woocommerce_output_product_data_tabs",
+			"class=\"shop_attributes\"",
+			"woocommerce_product_additional_information",
+			"woocommerce_show_product_sale_flash",
+			"woocommerce_single_product_summary",
+			"woocommerce_template_single_title",
+			"woocommerce_show_product_images",
+			"woocommerce_show_product_sale_flash",
+			"class=\"woocommerce-Price-amount",
+			"product_title",
+			"button, [type=\"submit\"]",
+			"logo",
+			"storefront_credit",
+			"class=\"site-info\"",
+			"storefront_footer",
+			"class=\"site-info\"",
+			"style.css",
+			"storefront_product_search",
+			"storefront_site_branding",
+			"storefront_cart_link",
+			"storefront_site_title_or_logo",
+			"class=\"amount\"",
+			"storefront_cart_link",
+			"WC_Widget_Cart",
+			"storefront_header_cart",
+			"storefront_site_branding",
+			"storefront_primary_navigation",
+			"storefront_site_branding",
+			"storefront_skip_links",
+			"storefront_site_branding",
+			"storefront_skip_links",
+			"skip-link",
+			"screen-reader-text",
+			"storefront_site_title_or_logo",
+			"url",
+			"template",
+			"storefront_site_title_or_logo",
+			"storefront_skip_links",
+			"storefront_header",
+			"admin-bar",
+			"admin-bar.min.css",
+			"dashicons.min.css"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -314,24 +546,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 8,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "sftp-config.json",
+					"file": "plugins/woocommerce/includes/wc-template-functions.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1377,
+						"buffer_size": 77999,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								608,
-								608
+								17142,
+								17142
 							]
 						],
 						"settings":
@@ -343,8 +575,1161 @@
 								{
 									"1":
 									[
-										607,
-										608
+										17258,
+										17259
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										17140,
+										17141
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 13264.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "plugins/woocommerce/templates/loop/sale-flash.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1055,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								948,
+								948
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										956,
+										961
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										762,
+										764
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 138.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "plugins/woocommerce/templates/content-product.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1945,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1937,
+								1937
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1035.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "plugins/woocommerce/templates/loop/add-to-cart.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1000,
+								1000
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1006,
+										1007
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										896,
+										897
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 138.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "plugins/woocommerce/templates/single-product/related.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1146,
+								1166
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1189,
+										1190
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1166,
+										1167
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 414.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "plugins/woocommerce/templates/loop/loop-end.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								649,
+								649
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "plugins/woocommerce/templates/loop/loop-start.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								685,
+								685
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										655,
+										658
+									]
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "plugins/woocommerce/templates/single-product/meta.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1587,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1135,
+								1135
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/tmp/sublime-sftp-browse-1504515125/mapped/www/test.ifelse.by/wp-content/plugins/woocommerce/templates/content-single-product.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3365,
+								3365
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3367,
+										3368
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										3334,
+										3335
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"is_remote": true,
+							"local_path": "/tmp/sublime-sftp-browse-1504514827/mapped/www/test.ifelse.by/wp-content/plugins/woocommerce/templates/content-single-product.php",
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tmp_dir": "/tmp/sublime-sftp-browse-1504515125/mapped/",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1940.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "themes/simdors/assets/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10750,
+								10750
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										10751,
+										10752
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										10710,
+										10711
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 14736.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "layout/good.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2630,
+								2630
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2633,
+										2634
 									]
 								},
 								"icon":
@@ -359,8 +1744,8 @@
 								{
 									"1":
 									[
-										568,
-										569
+										2629,
+										2630
 									]
 								},
 								"unmatched":
@@ -369,75 +1754,73 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
 							],
-							"expand_region_settings": "{\"hash\": \"9b184149e19ae8e5154ab3903928c802\", \"stack\": [{\"start\": 514, \"end\": 522}]}",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1242.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -480,7 +1863,7 @@
 	},
 	"output.sftp":
 	{
-		"height": 32.0
+		"height": 33.0
 	},
 	"pinned_build_system": "",
 	"project": "simdors.sublime-project",

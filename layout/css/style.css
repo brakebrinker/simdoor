@@ -150,7 +150,15 @@ header button{
 header nav{
 	text-align: center;
 }
-header nav>*{
+header nav .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav li {
+    display: inline-block;
+}
+header nav li a{
 	display: inline-block;
 	padding: 20px;
 	font-size: 16px;
@@ -161,11 +169,11 @@ header nav>*{
 #menu-button{
 	display:none;
 }
-header nav>*:hover{
+header nav li a:hover{
 	background-color: #ff7200;
 	color:#fff;
 }
-header.b2b nav>a:hover{
+header.b2b nav li a:hover{
 	background: none;
 	color: #fce0c7;
 }
