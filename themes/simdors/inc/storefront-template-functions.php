@@ -141,7 +141,7 @@ if ( ! function_exists( 'storefront_footer_phone' ) ) {
 	 */
 	function storefront_footer_phone() {
 		?>
-			<a href="">+7(123)4567890 </a><br/>
+			<a href="tel:+<?php echo preg_replace("/[^0-9]/", '', get_field('main_phone', 15)); ?>"><?php echo get_field('main_phone', 15); ?></a><br/>
 		<?php
 	}
 }
@@ -154,7 +154,7 @@ if ( ! function_exists( 'storefront_footer_confidence' ) ) {
 	 */
 	function storefront_footer_confidence() {
 		?>
-			<a href="#" class="conf">Политика конфиденциальности </a>
+			<a href="<?php echo get_page_link( 141 ); ?>" class="conf">Политика конфиденциальности </a>
 		<?php
 	}
 }
@@ -217,7 +217,7 @@ if ( ! function_exists( 'storefront_call_number' ) ) {
 	function storefront_call_number() {
 		?>
 		<!-- <div class="site-branding"> -->
-		<div class="col-md-3 col-md-offset-4 col-sm-4"><a href="tel:+78422656050">+7 8422 65-60-50</a></div>
+		<div class="col-md-3 col-md-offset-4 col-sm-4"><a href="tel:+<?php echo preg_replace("/[^0-9]/", '', get_field('main_phone', 15)); ?>"><?php echo get_field('main_phone', 15); ?></a></div>
 		<?php
 	}
 }
@@ -383,7 +383,7 @@ if ( ! function_exists( 'storefront_homepage_header' ) ) {
 		?>
 		<header class="entry-header">
 			<?php
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h2>', '</h2>' );
 			?>
 		</header><!-- .entry-header -->
 		<?php
@@ -398,12 +398,10 @@ if ( ! function_exists( 'storefront_page_header' ) ) {
 	 */
 	function storefront_page_header() {
 		?>
-		<header class="entry-header">
 			<?php
 			storefront_post_thumbnail( 'full' );
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h2>', '</h2>' );
 			?>
-		</header><!-- .entry-header -->
 		<?php
 	}
 }
@@ -416,7 +414,7 @@ if ( ! function_exists( 'storefront_page_content' ) ) {
 	 */
 	function storefront_page_content() {
 		?>
-		<div class="entry-content">
+		<div class="post-wrapper">
 			<?php the_content(); ?>
 			<?php
 				wp_link_pages( array(
@@ -463,7 +461,7 @@ if ( ! function_exists( 'storefront_post_content' ) ) {
 	 */
 	function storefront_post_content() {
 		?>
-		<div class="entry-content">
+		<div class="post-wrapper">
 		<?php
 
 		/**

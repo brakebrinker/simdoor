@@ -159,7 +159,7 @@ header button{
 header nav{
 	text-align: center;
 }
-header nav .menu ul {
+header nav ul.menu  {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -321,6 +321,9 @@ header .dropdown-menu a:hover{
 	padding: 35px 30px;
 	font-size: 18px;
 }
+.production .text h4 {
+    height: 40px;
+}
 .products p{
 	line-height: 1.5;
 	max-height:4.5em;
@@ -368,7 +371,10 @@ header .dropdown-menu a:hover{
 }
 .license img{
 	height: 327px;
-	margin: 17px;
+	margin: 17px auto;
+}
+.slick-initialized .slick-slide {
+    outline: none;
 }
 .reviews h2{
 	margin-bottom: 40px;
@@ -503,6 +509,10 @@ header .dropdown-menu a:hover{
 	margin-top: 80px;
 	margin-bottom: 80px;
 }
+.post-wrapper{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
 .good-loop{
 	background-color: #fff;
 	padding: 5px 30px 25px 30px;
@@ -518,6 +528,13 @@ header .dropdown-menu a:hover{
 	margin: 0;
 	padding-top: 20px;
 	border-top:1px solid #432811;
+}
+.good-loop h5 span {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 100;
+    margin-top: 5px;
+    display: block;
 }
 .attributes-item {
     width: 50%;
@@ -590,6 +607,7 @@ button.single_add_to_cart_button.button.alt {
 	width: 45px;
 	min-height: 45px;
 	margin-left: 15px;
+	box-shadow: none;
 }
 /*.good-loop .tool .button{
 	margin:0;
@@ -607,6 +625,7 @@ button.single_add_to_cart_button.button.alt {
 .good-loop span.price {
     width: 100%;
     display: block;
+    text-align: center;
 }
 .good-loop .onsale {
 	margin-top: 1em;
@@ -623,7 +642,9 @@ button.single_add_to_cart_button.button.alt {
 	cursor:pointer;
 	margin-bottom: 20px;
 }
-.filter .category span{
+.filter .category span,
+.filter .category a
+{
 	display: block;
 	padding: 12px;
 	font-weight: 400;
@@ -631,10 +652,12 @@ button.single_add_to_cart_button.button.alt {
 	border:1px solid;
 	transition:all 0.3s ease-out;
 }
-.filter .category:hover span{
+.filter .category:hover span,
+.filter .category:hover a{
 	color: #ff7200;
 }
-.filter-price-block span{
+.filter-price-block span,
+.filter-price-block a {
 	display: inline-block;
 	font-weight: 400;
 	color:#696969;
@@ -707,8 +730,15 @@ button.single_add_to_cart_button.button.alt {
 	border:none;
 }
 .good img{
-	height: 440px;
+	height: auto;
 	max-height:100%;
+}
+.pswp__bg {
+    background: rgba(0, 0, 0, 0.7);
+}
+.single-product #primary  div.product .woocommerce-product-gallery img {
+    margin: 0 auto;
+    display: block;
 }
 .good .buy.button{
 	background-image: url(../img/basket.svg);
@@ -787,6 +817,45 @@ button.single_add_to_cart_button.button.alt {
 	vertical-align: middle;
 	margin-right: 10px;
 }
+.quantity {
+    display: inline-block;
+}
+.updt-cart {
+    text-align: right;
+}
+.updt-cart > * {
+    display: inline-block;
+    width: auto;
+}
+.checkout #order_review .shop_table {
+     margin-bottom: 0; 
+}
+#order_review #payment .place-order {
+    margin-top: 0;
+    padding-left: 0;
+}
+#customer_details input {
+    margin: 0;
+    padding: 5px;
+}
+#order_comments {
+	max-width: 100%;
+}
+#payment .payment_methods {
+    display: none;
+}
+.place-order input {
+    margin: 0 auto;
+}
+div#order_review {
+    padding-left: 15px;
+}
+.number input::-webkit-outer-spin-button,
+.number input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 /*обратный звонок*/
 .call-form{
 	text-align: center;
@@ -847,7 +916,10 @@ footer strong{
 		font-size: 30px;
 		cursor:pointer;/*а просто так*/
 	}
-	header nav>*{
+	header nav li{
+		display:block;
+	}
+	header nav li a{
 		display:block;
 		border-top:1px solid #898989;
 	}

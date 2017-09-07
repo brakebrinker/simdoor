@@ -1,5 +1,5 @@
 ﻿<?php	include "header.php";?>		
-	<main>		
+	<main>
 		<div class="container good">
 			<div class="page-head">
 				<h2>дверь металлическая триумф-2</h2>

@@ -22,7 +22,9 @@
 				/**
 				 * Functions hooked in to storefront_footer action
 				 *
-				 * @hooked storefront_footer_widgets - 10
+				 * @hooked storefront_footer_widgets
+				 * @hooked storefront_footer_phone - 10
+				 * @hooked storefront_footer_confidence - 10
 				 * @hooked storefront_credit         - 20
 				 */
 				do_action( 'storefront_footer' ); ?>
@@ -40,10 +42,20 @@
 	</footer><!-- #colophon -->
 
 	<?php do_action( 'storefront_after_footer' ); ?>
-
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
+<div id="callme" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">			
+			<div class="modal-body call-form">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="center">Заказать звонок</h2>
+				<?php echo do_shortcode('[contact-form-7 id="112" title="Заказать звонок"]'); ?>
+			</div>
+		</div>
+	</div>
+</div>
 
+<?php wp_footer(); ?>
 </body>
 </html>

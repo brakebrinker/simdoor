@@ -312,3 +312,43 @@ function storefront_categorized_blog() {
 		return false;
 	}
 }
+
+/*function js_variables(){
+    $variables = array (
+        'ajax_url' => admin_url('admin-ajax.php'),
+    );
+    echo '<script type="text/javascript">window.wp_data = ' . json_encode($variables) . ';</script>';
+}
+
+function true_filter_function(){ 
+	if( isset( $_POST['data'] )) {
+		$typeDoors = substr($_POST['data'], strpos($_POST['data'], "=") + 1);
+		$args = array(
+				'post_type' => 'product',
+				'field' => 'id',
+				'product_tag' => $typeDoors,
+		);
+
+		$tagPosts = get_posts($args);
+
+		foreach($tagPosts as $post){
+			setup_postdata($post);
+		?>
+		<!-- <div class="col-md-3 col-sm-6">					
+			<div class="good-loop">
+				<img src="img/good4.jpg" alt="">
+				<h5><?php echo $post->post_title; ?></h5>
+				<div class="tool">
+					<a href="<?php echo $post->guid; ?>" class="button small">Подробнее</a>
+					<a href="<?php echo site_url() ?>/shop/?add-to-cart=<?php echo $post->ID; ?>" class="buy"></a>
+				</div>
+			</div>
+		</div> -->
+		<?php 
+		} 
+		wp_reset_postdata();
+ 	}
+ 	print_r($tagPosts);
+	wp_die();
+}
+*/

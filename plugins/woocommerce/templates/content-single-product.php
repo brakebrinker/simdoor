@@ -37,47 +37,62 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<?php
-		/**
-		 * woocommerce_before_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-	?>
-
-	<div class="summary entry-summary">
+	<div class="row">
+		<?php
+			/**
+			 * woocommerce_before_single_product_summary hook.
+			 *
+			 * @hooked woocommerce_show_product_sale_flash - 10
+			 * @hooked woocommerce_show_product_images - 20
+			 */
+			do_action( 'woocommerce_before_single_product_summary' );
+		?>
 
 		<?php
 			/**
 			 * woocommerce_single_product_summary hook.
 			 *
 			 * @hooked woocommerce_template_single_title - 5
-			 * @hooked woocommerce_template_single_rating - 10
-			 * @hooked woocommerce_template_single_price - 10
-			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked woocommerce_template_single_meta - 40
+			 * @hooked rem woocommerce_template_single_rating - 10
+			 * @hooked rem woocommerce_template_single_price - 10
+			 * @hooked rem woocommerce_template_single_excerpt - 20
+			 * @hooked rem woocommerce_template_single_meta - 40
 			 * @hooked woocommerce_template_single_sharing - 50
 			 * @hooked WC_Structured_Data::generate_product_data() - 60
 			 */
 			do_action( 'woocommerce_single_product_summary' );
 		?>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-md-offset-4 col-sm-4 col-sm-offset-4">
+		<?php
+			/**
+			 * woocommerce_after_single_product_summary_price hook.
+			 *
+			 * @hooked woocommerce_output_product_data_tabs - 10
+			 * @hooked woocommerce_template_single_add_to_cart - 30
+			 * @hooked woocommerce_upsell_display - 15
+			 * @hooked woocommerce_output_related_products - 20
+			* @hooked woocommerce_template_single_price - 10
+			 */
+			do_action( 'woocommerce_after_single_product_summary_price' );
+		?>
+		</div>
+	</div>
+	<div class="container good-wrapper">
 
-	</div><!-- .summary -->
-
-	<?php
-		/**
-		 * woocommerce_after_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_output_product_data_tabs - 10
-		 * @hooked woocommerce_upsell_display - 15
-		 * @hooked woocommerce_output_related_products - 20
-		 */
-		do_action( 'woocommerce_after_single_product_summary' );
-	?>
+		<h2 style="text-align: left;"><?php esc_html_e( 'Возможно вас также заинтересует:', 'woocommerce' ); ?></h2>
+		<div class="row">
+			<?php
+				/**
+				 * woocommerce_shop_filter hook.
+				 *
+				 * @hooked woocommerce_products_list_related - 10
+				 */
+				do_action( 'woocommerce_shop_products_related' );
+			?>
+		</div>
+	</div>
 
 </div><!-- #product-<?php the_ID(); ?> -->
 

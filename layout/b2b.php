@@ -1,5 +1,5 @@
 ﻿<?php	include "header1.php";?>		
-	<main>		
+	<main>		 
 		<div class="banner" id="slide2">
 		  <div class="container">
 			<div class="row">

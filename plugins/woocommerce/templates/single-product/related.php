@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( $related_products ) : ?>
+ if ( $related_products ) : ?>
 
 	<div class="container good-wrapper">
 

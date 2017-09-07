@@ -848,6 +848,213 @@ if ( ! function_exists( 'woocommerce_catalog_ordering' ) ) {
 	}
 }
 
+if ( ! function_exists( 'woocommerce_category_list' ) ) {
+
+	/**
+	 * Output the kategory list.
+	 *
+	 * @subpackage	Loop
+	 */
+	function woocommerce_category_list() {
+		  $taxonomy     = 'product_cat';
+		  $orderby      = 'name';  
+		  $show_count   = 0;
+		  $pad_counts   = 0; 
+		  $hierarchical = 1; 
+		  $title        = '';  
+		  $empty        = 0;
+		$args = array(
+		  'taxonomy'     => $taxonomy,
+		  'orderby'      => $orderby,
+		  'show_count'   => $show_count,
+		  'pad_counts'   => $pad_counts,
+		  'hierarchical' => $hierarchical,
+		  'title_li'     => $title,
+		  'hide_empty'   => $empty
+		);
+		 $all_categories = get_categories( $args );
+		//print_r($all_categories);
+		foreach ($all_categories as $cat) {
+		    //print_r($cat);
+		    if($cat->category_parent == 0) {
+		        $category_id = $cat->term_id;
+
+		        echo '<div class="col-md-3">
+							<label class="category">
+								<input type="radio" name="category" value="">
+								<a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>
+							</label>
+						</div>';
+			}
+		}
+	}
+}
+
+if ( ! function_exists( 'woocommerce_category_list_front' ) ) {
+
+	/**
+	 * Output the kategory list.
+	 *
+	 * @subpackage	Loop
+	 */
+	function woocommerce_category_list_front() {
+		  $taxonomy     = 'product_cat';
+		  $orderby      = 'name';  
+		  $show_count   = 0;
+		  $pad_counts   = 0; 
+		  $hierarchical = 1; 
+		  $title        = '';  
+		  $empty        = 0;
+		$args = array(
+		  'taxonomy'     => $taxonomy,
+		  'orderby'      => $orderby,
+		  'show_count'   => $show_count,
+		  'pad_counts'   => $pad_counts,
+		  'hierarchical' => $hierarchical,
+		  'title_li'     => $title,
+		  'hide_empty'   => $empty
+		);
+
+		 $all_categories = get_categories( $args );
+		//print_r($all_categories);
+		foreach ($all_categories as $cat) {
+		    //print_r($cat);
+		    if($cat->category_parent == 0) {
+		        $category_id = $cat->term_id;
+
+		        $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
+		        	    $image = wp_get_attachment_url( $thumbnail_id );
+
+				echo '<div class="col-md-3 col-sm-6 col-sm-6">
+					<img src="' . $image .'" alt="">
+					<div class="text">
+						<h4>' . $cat->name . '</h4>
+						<a href="'. get_term_link($cat->slug, 'product_cat') .'" class="button">Подробнее</a>
+					</div>
+				</div>';
+			}
+		}
+	}
+}
+
+if ( ! function_exists( 'woocommerce_products_list_front' ) ) {
+
+	/**
+	 * Output the subcategory list.
+	 *
+	 * @subpackage	Loop
+	 */
+	function woocommerce_products_list_front() {
+		$args = array(
+				'post_type' => 'product',
+				'field' => 'id',
+				'numberposts' => 8,
+				'orderby' => 'rand',
+		);
+
+		$prodPosts = get_posts( $args );
+
+		foreach($prodPosts as $post){
+			setup_postdata($post);
+		?>
+		<div class="col-md-3 col-sm-6">					
+			<div class="good-loop">
+				<img src="<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>" alt="">
+				<h5><?php echo $post->post_title; ?></h5>
+				<div class="tool">
+					<a href="<?php echo $post->guid; ?>" class="button small">Подробнее</a>
+					<a href="<?php echo site_url() ?>/shop/?add-to-cart=<?php echo $post->ID; ?>" class="buy"></a>
+				</div>
+			</div>
+		</div>
+		<?php 
+		} 
+		wp_reset_postdata();
+	}
+}
+if ( ! function_exists( 'woocommerce_products_list_related' ) ) {
+
+	/**
+	 * Output the subcategory list.
+	 *
+	 * @subpackage	Loop
+	 */
+	function woocommerce_products_list_related() {
+		$args = array(
+				'post_type' => 'product',
+				'field' => 'id',
+				'numberposts' => 4,
+				'orderby' => 'rand',
+		);
+
+		$prodPosts = get_posts( $args );
+
+		foreach($prodPosts as $post){
+			setup_postdata($post);
+		?>
+		<div class="col-md-3 col-sm-6">					
+			<div class="good-loop">
+				<img src="<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>" alt="">
+				<h5><?php echo $post->post_title; ?></h5>
+				<div class="tool">
+					<a href="<?php echo $post->guid; ?>" class="button small">Подробнее</a>
+					<a href="<?php echo site_url() ?>/shop/?add-to-cart=<?php echo $post->ID; ?>" class="buy"></a>
+				</div>
+			</div>
+		</div>
+		<?php 
+		} 
+		wp_reset_postdata();
+	}
+}
+
+if ( ! function_exists( 'woocommerce_subcategory_list' ) ) {
+
+	/**
+	 * Output the subcategory list.
+	 *
+	 * @subpackage	Loop
+	 */
+	function woocommerce_subcategory_list() {
+		  $taxonomy     = 'product_cat';
+		  $orderby      = 'name';  
+		  $show_count   = 0;
+		  $pad_counts   = 0; 
+		  $hierarchical = 1; 
+		  $title        = '';  
+		  $empty        = 0;
+		  $category_id = get_queried_object()->term_id;
+		if ($category_id != '') {
+			$args2 = array(
+			'taxonomy'     => $taxonomy,
+			'child_of'     => 0,
+			'parent'       => $category_id,
+			'orderby'      => $orderby,
+			'show_count'   => $show_count,
+			'pad_counts'   => $pad_counts,
+			'hierarchical' => $hierarchical,
+			'title_li'     => $title,
+			'hide_empty'   => $empty
+			);
+			 $sub_cats = get_categories( $args2 );
+			 $countSub = 0;
+
+			if($sub_cats) {
+				foreach ($sub_cats as $sub_category) {
+					$countSub ++;
+					echo '<label class="price">
+								<input type="radio" name="price" value="">
+								<a href="'. get_term_link($sub_category->slug, 'product_cat') .'">'. $sub_category->name .'</a>
+							</label>';
+					if ($countSub < count($sub_cats)) {
+						echo '<span class="separator"></span>';
+					}
+				}
+			}
+		}
+	}
+}
+
 if ( ! function_exists( 'woocommerce_pagination' ) ) {
 
 	/**
@@ -1556,8 +1763,8 @@ if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
 	function woocommerce_breadcrumb( $args = array() ) {
 		$args = wp_parse_args( $args, apply_filters( 'woocommerce_breadcrumb_defaults', array(
 			'delimiter'   => '&nbsp;&#47;&nbsp;',
-			'wrap_before' => '<nav class="woocommerce-breadcrumb">',
-			'wrap_after'  => '</nav>',
+			'wrap_before' => '<div class="breadcrumbs">',
+			'wrap_after'  => '</div>',
 			'before'      => '',
 			'after'       => '',
 			'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),

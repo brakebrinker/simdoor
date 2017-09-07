@@ -41,8 +41,8 @@ get_header(); ?>
 		  				<div class="content">
 		  					<h2><?php the_title(); ?></h2>
 		  					<?php the_content(); ?>
-		  					<p class="important"><?php echo get_field('link_to', get_the_ID()); ?></p>
-		  					<a href="<?php echo get_field('subtext', get_the_ID()); ?>" class="button">Узнать подробнее</a>
+		  					<p class="important"><?php echo get_field('subtext', get_the_ID()); ?></p>
+		  					<a href="<?php echo get_field('link_to', get_the_ID()); ?>" class="button">Узнать подробнее</a>
 		  				</div>
 		  			</div>
 		  	  	</div>
@@ -91,14 +91,14 @@ get_header(); ?>
 					<div class="text">
 						<h2><?php echo get_field('products_title_1', get_queried_object_id()); ?></h2>
 						<p><?php echo get_field('products_text_1', get_queried_object_id()); ?></p>
-						<a href="" class="button">Подробнее</a>
+						<a href="<?php echo get_page_link( 98 ); ?>" class="button">Подробнее</a>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="text">
 						<h2><?php echo get_field('products_title_2', get_queried_object_id()); ?></h2>
 						<p><?php echo get_field('products_text_2', get_queried_object_id()); ?></p>
-						<a href="" class="button">Подробнее</a>
+						<a href="<?php echo get_page_link( 114 ); ?>" class="button">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -106,34 +106,14 @@ get_header(); ?>
 		<div class="production background">
 			<h2 class="center">Наше производство</h2>
 			<div class="container">
-				<div class="col-md-3 col-sm-6">
-					<div class="pic" id="metal"></div>
-					<div class="text">
-						<h4><b>Металлические</b> двери</h4>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="pic" id="fire-resist"></div>
-					<div class="text">
-						<h4><b>Противопожарные</b> двери</h4>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="pic" id="tech"></div>
-					<div class="text">
-						<h4><b>Технические</b> двери</h4>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="pic" id="nonstandart"></div>
-					<div class="text">
-						<h4><b>Нестандартные</b> двери и люки</h4>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
+				<?php
+					/**
+					 * woocommerce_shop_filter hook.
+					 *
+					 * @hooked woocommerce_category_list_front - 10
+					 */
+					do_action( 'woocommerce_shop_category_front' );
+				?>
 			</div>
 		</div>
 		<div class="container reviews">
@@ -178,6 +158,7 @@ get_header(); ?>
 		</div>
 		<div class="license">
 			<h2 class="center">Лицензии</h2>
+			<div class="license-gallery">
 			<?php $images = acf_photo_gallery('license_choise', get_queried_object_id()); 
 			if( count($images) ):
 			foreach($images as $image):
@@ -185,15 +166,16 @@ get_header(); ?>
 				$title = $image['title']; //The title
 				$caption= $image['caption']; //The caption
 				$full_image_url= $image['full_image_url']; //Full size image url
-				$full_image_url = acf_photo_gallery_resize_image($full_image_url, 231, 327); //Resized size to 262px width by 160px height image url
+				$custom_image_url = acf_photo_gallery_resize_image($full_image_url, 231, 327); //Resized size to 262px width by 160px height image url
 				$thumbnail_image_url= $image['thumbnail_image_url']; //Get the thumbnail size image url 150px by 150px
 				$url= $image['url']; //Goto any link when clicked
 				$target= $image['target']; //Open normal or new tab
 				$alt = get_field('photo_gallery_alt', $id); //Get the alt which is a extra field (See below how to add extra fields)
 				$class = get_field('photo_gallery_class', $id); //Get the class which is a extra field (See below how to add extra fields)
 			?>
-			<img src="<?php echo $full_image_url; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
+			<a href="<?php echo $full_image_url; ?>" ><img src="<?php echo $custom_image_url; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>"></a>
 			<?php endforeach; endif; ?>
+			</div>
 		</div>
 	</main>
 

@@ -43,7 +43,7 @@ add_action( 'storefront_header_post', 'storefront_menu_button',                 
  */
 add_action( 'storefront_footer', 'storefront_footer_widgets', 10 );
 add_action( 'storefront_footer', 'storefront_credit',         20 );
-add_action( 'storefront_footer', 'storefront_footer_phone',   30 );
+add_action( 'storefront_footer', 'storefront_footer_phone',   30 ); 
 add_action( 'storefront_footer', 'storefront_footer_confidence',   40 );
 
 add_action( 'storefront_footer_sub', 'storefront_footer_logo',   50 );
@@ -82,7 +82,7 @@ add_action( 'storefront_loop_post',           'storefront_post_header',         
 add_action( 'storefront_loop_post',           'storefront_post_meta',            20 );
 add_action( 'storefront_loop_post',           'storefront_post_content',         30 );
 add_action( 'storefront_loop_after',          'storefront_paging_nav',           10 );
-add_action( 'storefront_single_post',         'storefront_post_header',          10 );
+remove_action( 'storefront_single_post',         'storefront_post_header',          10 );
 add_action( 'storefront_single_post',         'storefront_post_meta',            20 );
 add_action( 'storefront_single_post',         'storefront_post_content',         30 );
 add_action( 'storefront_single_post_bottom',  'storefront_post_nav',             10 );
@@ -96,9 +96,16 @@ add_action( 'storefront_post_content_before', 'storefront_post_thumbnail',      
  * @see  storefront_page_content()
  * @see  storefront_display_comments()
  */
-add_action( 'storefront_page',       'storefront_page_header',          10 );
+remove_action( 'storefront_page',       'storefront_page_header',          10 );
 add_action( 'storefront_page',       'storefront_page_content',         20 );
 add_action( 'storefront_page_after', 'storefront_display_comments',     10 );
 
 add_action( 'storefront_homepage',       'storefront_homepage_header',      10 );
 add_action( 'storefront_homepage',       'storefront_page_content',         20 );
+
+
+/* Ajax filter */
+//add_action( 'wp_enqueue_scripts', 'myajax_data', 99 );
+add_action('wp_head','js_variables');
+add_action('wp_ajax_myfilter', 'true_filter_function'); 
+add_action('wp_ajax_nopriv_myfilter', 'true_filter_function');

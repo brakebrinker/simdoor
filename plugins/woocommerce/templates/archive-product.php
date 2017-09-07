@@ -32,40 +32,66 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_before_main_content' );
 	?>
+	<?php
+		/**
+		 * woocommerce_archive_description hook.
+		 *
+		 * @hooked woocommerce_taxonomy_archive_description - 10
+		 * @hooked woocommerce_product_archive_description - 10
+		 */
+		do_action( 'woocommerce_archive_description' );
+	?>
+    	<div class="container">
+    		<div class="page-head">
+    			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+    			<h2><?php woocommerce_page_title(); ?></h2>
+    			<?php endif; ?>
+    			<?php
+    			/**
+    			 * Functions hooked in to storefront_content_top
+    			 *
+    			 * @hooked woocommerce_breadcrumb - 10
+    			 */
+    			do_action( 'storefront_content_top' );
+    			?>
+    			<?php if ( have_posts() ) : ?>
+    				<?php
+    					/**
+    					 * woocommerce_before_shop_loop hook.
+    					 *
+    					 * @hooked wc_print_notices - 10
+    					 * @hooked rem  woocommerce_result_count - 20
+    					 * @hooked rem woocommerce_catalog_ordering - 30
+    					 */
+    					do_action( 'woocommerce_before_shop_loop' );
+    				?>
+    				<form id="filter" action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" class="filter" method="POST">
+    					<div class="row">
+    					<?php
+    						/**
+    						 * woocommerce_shop_filter hook.
+    						 *
+    						 * @hooked woocommerce_category_list - 10
+    						 */
+    						do_action( 'woocommerce_shop_filter' );
+    					?>
+    					</div>
+    					<div class="filter-price-block">
+    					<?php
+    						/**
+    						 * woocommerce_shop_filter hook.
+    						 *
+    						 * @hooked woocommerce_subcategory_list - 10
+    						 */
+    						do_action( 'woocommerce_shop_subfilter' );
+    					?>
+    					</div>
+    				</form>
 
-    <header class="woocommerce-products-header">
 
-		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-
-			<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-
-		<?php endif; ?>
-
-		<?php
-			/**
-			 * woocommerce_archive_description hook.
-			 *
-			 * @hooked woocommerce_taxonomy_archive_description - 10
-			 * @hooked woocommerce_product_archive_description - 10
-			 */
-			do_action( 'woocommerce_archive_description' );
-		?>
-
-    </header>
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php
-				/**
-				 * woocommerce_before_shop_loop hook.
-				 *
-				 * @hooked wc_print_notices - 10
-				 * @hooked woocommerce_result_count - 20
-				 * @hooked woocommerce_catalog_ordering - 30
-				 */
-				do_action( 'woocommerce_before_shop_loop' );
-			?>
-
+			<?php wp_reset_postdata(); ?>
+			</div>
+			<div class="row good-wrapper">
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
@@ -108,6 +134,7 @@ get_header( 'shop' ); ?>
 			?>
 
 		<?php endif; ?>
+			</div>
 
 	<?php
 		/**

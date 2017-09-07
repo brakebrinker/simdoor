@@ -6,17 +6,21 @@
  * @package storefront
  */
 get_header(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
 <main>		
 	<div class="container">
 		<div class="page-head">
-			<h2>Партнёрам</h2>
-			<div class="breadcrumbs">
-				<a href="index.php">Главная</a>
-				/
-				<span>Партнерам</span>
-			</div>
+			<h2><?php the_title(); ?></h2>
+			<?php
+			/**
+			 * Functions hooked in to storefront_content_top
+			 *
+			 * @hooked woocommerce_breadcrumb - 10
+			 */
+			do_action( 'storefront_content_top' );
+			?>
 		</div>
-		<?php while ( have_posts() ) : the_post(); 
+		<?php
 			the_content();
 		endwhile; // End of the loop. ?>
 		

@@ -20,8 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header( 'shop' ); ?>
-
+get_header( 'shop' ); ?> 
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.
@@ -33,8 +32,22 @@ get_header( 'shop' ); ?>
 	?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+			<div class="container good">
+				<div class="page-head">
+					<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+					<h2><?php the_title(); ?></h2>
+					<?php endif; ?>
+					<?php
+					/**
+					 * Functions hooked in to storefront_content_top
+					 *
+					 * @hooked woocommerce_breadcrumb - 10
+					 */
+					do_action( 'storefront_content_top' );
+					?>
+				</div>
+				<?php wc_get_template_part( 'content', 'single-product' ); ?>
+			</div>
 
 		<?php endwhile; // end of the loop. ?>
 

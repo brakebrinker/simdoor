@@ -16,4 +16,4 @@
  * @version     2.0.0
  */
 ?>
-<div class="col-md-3 col-sm-6">
+<!-- <div class="col-md-3 col-sm-6"> -->

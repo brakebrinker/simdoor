@@ -32,8 +32,8 @@ add_action( 'storefront_content_top',             'storefront_shop_messages',   
 add_action( 'storefront_content_top',             'woocommerce_breadcrumb',                   10 );
 
 add_action( 'woocommerce_after_shop_loop',        'storefront_sorting_wrapper',               9 );
-add_action( 'woocommerce_after_shop_loop',        'woocommerce_catalog_ordering',             10 );
-add_action( 'woocommerce_after_shop_loop',        'woocommerce_result_count',                 20 );
+remove_action( 'woocommerce_after_shop_loop',        'woocommerce_catalog_ordering',             10 );
+remove_action( 'woocommerce_after_shop_loop',        'woocommerce_result_count',                 20 );
 add_action( 'woocommerce_after_shop_loop',        'woocommerce_pagination',                   30 );
 add_action( 'woocommerce_after_shop_loop',        'storefront_sorting_wrapper_close',         31 );
 add_action( 'woocommerce_after_shop_loop',        'storefront_product_columns_wrapper_close', 40 );
@@ -41,13 +41,20 @@ add_action( 'woocommerce_after_shop_loop',        'storefront_product_columns_wr
 add_filter( 'loop_shop_columns',                  'storefront_loop_columns' );
 
 add_action( 'woocommerce_before_shop_loop',       'storefront_sorting_wrapper',               9 );
-add_action( 'woocommerce_before_shop_loop',       'woocommerce_catalog_ordering',             10 );
-add_action( 'woocommerce_before_shop_loop',       'woocommerce_result_count',                 20 );
+remove_action( 'woocommerce_before_shop_loop',       'woocommerce_catalog_ordering',             10 );
+remove_action( 'woocommerce_before_shop_loop',       'woocommerce_result_count',                 20 );
 add_action( 'woocommerce_before_shop_loop',       'storefront_woocommerce_pagination',        30 );
 add_action( 'woocommerce_before_shop_loop',       'storefront_sorting_wrapper_close',         31 );
 add_action( 'woocommerce_before_shop_loop',       'storefront_product_columns_wrapper',       40 );
 
-add_action( 'storefront_footer',                  'storefront_handheld_footer_bar',           999 );
+remove_action( 'storefront_footer',                  'storefront_handheld_footer_bar',           999 );
+
+
+add_action( 'woocommerce_shop_filter',       'woocommerce_category_list',                 10 );
+add_action( 'woocommerce_shop_category_front',       'woocommerce_category_list_front',                 10 );
+add_action( 'woocommerce_shop_products_front',       'woocommerce_products_list_front',                 10 );
+add_action( 'woocommerce_shop_products_related',       'woocommerce_products_list_related',                 10 );
+add_action( 'woocommerce_shop_subfilter',       'woocommerce_subcategory_list',                 10 );
 
 /**
  * Products
